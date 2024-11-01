@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de Cambios de Precio</title>
+</head>
+<body>
+    <h1>Visualización de Cambios de Precio</h1>
+    <img src="{{ imagen_url }}" alt="Gráfico de Cambios de Precio">
+
+    <h1>Gráficos de Análisis de Datos</h1>
+    
+    <h2>Distribución de Tarifa</h2>
+    <img src="{% static 'images/tarifa_histograma.png' %}" alt="Histograma de Tarifa">
+
+    <h2>Distribución de Precio Vendido</h2>
+    <img src="{% static '/precio_vendido_histograma.png' %}" alt="Histograma de Precio Vendido">
+
+    <h2>Box Plot de Tarifa y Precio Vendido</h2>
+    <img src="{% static 'images/tarifa_precio_boxplot.png' %}" alt="Box Plot de Tarifa y Precio Vendido">
+</body>
+</html>

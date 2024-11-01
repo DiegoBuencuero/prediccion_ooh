@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Espacios Alquilados en Agosto y Octubre</title>
+</head>
+<body>
+    <h1>Espacios Alquilados en Agosto y Octubre</h1>
+    <table border="1">
+        <tr>
+            <th>Producto</th>
+            <th>Ubicación</th>
+            <th>Fecha Inicio</th>
+            <th>Fecha Fin</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.Producto }}</td>
+            <td>{{ row.Ubicación }}</td>
+            <td>{{ row.fecha_inicio }}</td>
+            <td>{{ row.fecha_fin }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
